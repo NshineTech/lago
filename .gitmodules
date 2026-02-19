@@ -1,6 +1,6 @@
 [submodule "api"]
 	path = api
-	url = https://github.com/NshineTech
+	url = https://github.com/NshineTech/lago-api
 [submodule "front"]
 	path = front
-	url = https://github.com/NshineTech
+	url = https://github.com/NshineTech/lago-front
