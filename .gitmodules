@@ -1,6 +1,6 @@
 [submodule "api"]
-    path = api
-    url = https://github.com
+	path = api
+	url = https://github.com
 [submodule "front"]
-    path = front
-    url = https://github.com
+	path = front
+	url = https://github.com
