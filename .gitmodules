@@ -1,6 +1,6 @@
 [submodule "api"]
-	path = api
-	url = git@github.com:NshineTech/lago-api.git
+    path = api
+    url = https://github.com
 [submodule "front"]
-	path = front
-	url = git@github.com:NshineTech/lago-front.git
+    path = front
+    url = https://github.com
