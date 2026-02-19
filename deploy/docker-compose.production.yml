@@ -107,11 +107,6 @@ services:
     <<: *backend-image
     container_name: lago-migrate
     restart: no
-    depends_on:
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
     command: ["./scripts/migrate.sh"]
     volumes:
       - lago_rsa_data:/app/config/keys
@@ -125,10 +120,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -205,10 +196,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -235,10 +222,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -256,10 +239,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -286,10 +265,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -316,10 +291,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -344,10 +315,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
@@ -372,10 +339,6 @@ services:
     depends_on:
       migrate:
         condition: service_completed_successfully
-      db:
-        condition: service_healthy
-        restart: true
-        required: false
       redis:
         condition: service_healthy
         restart: true
